@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1600" viewBox="0 0 1800 1600" font-family="Geist, sans-serif">
+  <defs>
+    <style>
+      .chip { font-family: 'Geist Mono', monospace; font-size: 58px; }
+      .tag  { font-family: 'Geist Mono', monospace; font-size: 40px; fill: #a0a0a0; }
+      .lbl  { font-size: 42px; fill: #a0a0a0; }
+      .res  { font-size: 54px; fill: #ffffff; }
+      .green { fill: #81BA10; }
+      .graydot { fill: rgba(210,210,210,0.10); stroke: #d2d2d2; stroke-width: 7; }
+      .lostdot { fill: rgba(70,70,70,0.10); stroke: #464646; stroke-width: 7; }
+    </style>
+  </defs>
+  <g>
+    <text x="80" y="140" class="chip green">SDFT</text>
+    <text x="288" y="136" class="tag">ON-POLICY</text>
+    <text x="335" y="230" class="lbl" text-anchor="middle">what the model knows</text>
+    <circle cx="190" cy="330" r="50" class="graydot"/>
+    <circle cx="335" cy="330" r="50" class="graydot"/>
+    <circle cx="480" cy="330" r="50" class="graydot"/>
+    <line x1="640" y1="330" x2="846" y2="330" stroke="#787878" stroke-width="8"/>
+    <polygon points="880,330 846,310 846,350" fill="#787878"/>
+    <circle cx="1000" cy="330" r="50" class="graydot"/>
+    <circle cx="1145" cy="330" r="50" class="graydot"/>
+    <circle cx="1290" cy="330" r="50" class="graydot"/>
+    <circle cx="1435" cy="330" r="76" fill="rgba(129,186,16,0.16)"/>
+    <circle cx="1435" cy="330" r="63" fill="rgba(129,186,16,0.31)"/>
+    <circle cx="1435" cy="330" r="50" class="green"/>
+    <rect x="1409" y="319" width="52" height="22" rx="11" fill="#fff"/>
+    <rect x="1424" y="304" width="22" height="52" rx="11" fill="#fff"/>
+    <text x="1435" y="414" class="lbl green" text-anchor="middle">new skill</text>
+    <text x="80" y="600" class="res">learns the new skill</text>
+    <path d="M 690 578 l 22 24 l 40 -46" stroke="#81BA10" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="830" y="600" class="res">keeps the old ones</text>
+    <path d="M 1685 578 l 22 24 l 40 -46" stroke="#81BA10" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <line x1="80" y1="800" x2="1720" y2="800" stroke="#3c3c3c" stroke-width="3"/>
+  <g>
+    <text x="80" y="960" class="chip" fill="#c8c8c8">SFT</text>
+    <text x="222" y="956" class="tag">OFF-POLICY</text>
+    <text x="335" y="1050" class="lbl" text-anchor="middle">what the model knows</text>
+    <circle cx="190" cy="1150" r="50" class="graydot"/>
+    <circle cx="335" cy="1150" r="50" class="graydot"/>
+    <circle cx="480" cy="1150" r="50" class="graydot"/>
+    <line x1="640" y1="1150" x2="846" y2="1150" stroke="#787878" stroke-width="8"/>
+    <polygon points="880,1150 846,1130 846,1170" fill="#787878"/>
+    <circle cx="1000" cy="1150" r="50" class="lostdot"/>
+    <line x1="969" y1="1119" x2="1031" y2="1181" stroke="#E5585C" stroke-width="11"/>
+    <line x1="1031" y1="1119" x2="969" y2="1181" stroke="#E5585C" stroke-width="11"/>
+    <circle cx="1145" cy="1150" r="50" class="lostdot"/>
+    <line x1="1114" y1="1119" x2="1176" y2="1181" stroke="#E5585C" stroke-width="11"/>
+    <line x1="1176" y1="1119" x2="1114" y2="1181" stroke="#E5585C" stroke-width="11"/>
+    <circle cx="1290" cy="1150" r="50" class="lostdot"/>
+    <line x1="1259" y1="1119" x2="1321" y2="1181" stroke="#E5585C" stroke-width="11"/>
+    <line x1="1321" y1="1119" x2="1259" y2="1181" stroke="#E5585C" stroke-width="11"/>
+    <circle cx="1435" cy="1150" r="76" fill="rgba(129,186,16,0.16)"/>
+    <circle cx="1435" cy="1150" r="63" fill="rgba(129,186,16,0.31)"/>
+    <circle cx="1435" cy="1150" r="50" class="green"/>
+    <rect x="1409" y="1139" width="52" height="22" rx="11" fill="#fff"/>
+    <rect x="1424" y="1124" width="22" height="52" rx="11" fill="#fff"/>
+    <text x="1435" y="1234" class="lbl green" text-anchor="middle">new skill</text>
+    <text x="80" y="1420" class="res">learns the new skill</text>
+    <path d="M 690 1398 l 22 24 l 40 -46" stroke="#81BA10" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="830" y="1420" class="res">loses the old ones</text>
+    <g stroke="#E5585C" stroke-width="13" stroke-linecap="round">
+      <line x1="1660" y1="1398" x2="1694" y2="1432"/>
+      <line x1="1694" y1="1398" x2="1660" y2="1432"/>
+    </g>
+  </g>
+</svg>
